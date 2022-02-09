@@ -24,6 +24,7 @@ def storage():
 def test_call(machine, calculator):
     machine.addValuesWithCall(calculator, 1, 2)
     assert_equal(machine.calculateResult(), 0)
+    assert_equal(calculator.calculateResult(), 3)
 
 
 def test_delegatecall(machine, calculator):
