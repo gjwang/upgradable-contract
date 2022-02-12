@@ -30,3 +30,4 @@ def test_call(machine, calculator):
 def test_delegatecall(machine, calculator):
     machine.addValuesWithDelegateCall(calculator, 1, 2)
     assert_equal(machine.calculateResult(), 3)
+    assert_equal(calculator.calculateResult(), 0)
